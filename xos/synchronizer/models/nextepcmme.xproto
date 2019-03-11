@@ -1,0 +1,10 @@
+option app_label = "nextepcmongodb";
+option name = "nextepcmongodb";
+
+message NextEPCMongoDB (Service){
+    option verbose_name = "NextEPCMongoDB";
+}
+
+message NextEPCMongoDBInstance (ServiceInstance){
+    option verbose_name = "NextEPCMongoDBInstance";
+}
