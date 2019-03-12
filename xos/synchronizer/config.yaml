@@ -14,14 +14,14 @@
 # limitations under the License.
 
 
-name: nextepcmongodb
+name: mongodbservice
 accessor:
   username: admin@opencord.org
   password: letmein
   endpoint: xos-core:50051
 required_models:
-  - NextEPCMongoDB
-  - NextEPCMongoDBInstance
+  - MongoDBService
+  - MongoDBServiceInstance
   - KubernetesResourceInstance
   - ServiceDependency
   - KubernetesService
@@ -30,7 +30,7 @@ required_models:
   - KubernetesSecret
   - KubernetesConfigVolumeMount
   - KubernetesSecretVolumeMount
-dependency_graph: "/opt/xos/synchronizers/nextepcmongodb/model-deps"
-sys_dir: "/opt/xos/synchronizers/nextepcmongodb/sys"
-model_policies_dir: "/opt/xos/synchronizers/nextepcmongodb/model_policies"
-models_dir: "/opt/xos/synchronizers/nextepcmongodb/models"
+dependency_graph: "/opt/xos/synchronizers/mongodbservice/model-deps"
+sys_dir: "/opt/xos/synchronizers/mongodbservice/sys"
+model_policies_dir: "/opt/xos/synchronizers/mongodbservice/model_policies"
+models_dir: "/opt/xos/synchronizers/mongodbservice/models"

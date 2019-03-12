@@ -1,10 +1,10 @@
-option app_label = "nextepcmongodb";
-option name = "nextepcmongodb";
+option app_label = "mongodbservice";
+option name = "mongodbservice";
 
-message NextEPCMongoDB (Service){
-    option verbose_name = "NextEPCMongoDB";
+message MongoDBService (Service){
+    option verbose_name = "MongoDBService";
 }
 
-message NextEPCMongoDBInstance (ServiceInstance){
-    option verbose_name = "NextEPCMongoDBInstance";
+message MongoDBServiceInstance (ServiceInstance){
+    option verbose_name = "MongoDBServiceInstance";
 }
