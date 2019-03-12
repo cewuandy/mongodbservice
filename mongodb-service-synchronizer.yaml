@@ -16,22 +16,22 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: nextepc-mongodb-synchronizer
+  name: mongodb-service-synchronizer
   labels:
-    app: nextepc-mongodb-synchronizer
+    app: mongodb-service-synchronizer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nextepc-mongodb-synchronizer
+      app: mongodb-service-synchronizer
   template:
     metadata:
       labels:
-        app: nextepc-mongodb-synchronizer
+        app: mongodb-service-synchronizer
     spec:
       containers:
-        - name: nextepc-mongodb
-          image: cewuandy/nextepc-mongodb-synchronizer
+        - name: mongodb-service
+          image: cewuandy/mongodb-service-synchronizer
           imagePullPolicy: Always
           volumeMounts:
             - name: certchain-volume
